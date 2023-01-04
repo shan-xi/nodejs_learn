@@ -27,3 +27,20 @@ npm install --save @nestjs/typeorm typeorm pg
 
 #uninsall uuid
 npm uninsall uuid
+
+#create auth module
+nest g module auth
+
+#create auth controller
+nest g controller auth --no-spec
+
+#create auth service
+nest g service auth --no-spec
+
+#install bcrypt
+npm install bcrypt --save
+
+#install jwt related libraries
+npm install @nestjs/jwt @nestjs/passport passport passport-jwt
+
+#https://jwt.io/
