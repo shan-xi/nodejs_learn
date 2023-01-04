@@ -1,0 +1,29 @@
+#create project
+nest new nestjs-task-management
+
+#create module named "tasks"
+nest g module tasks
+
+#run app at dev
+npm run start:dev
+
+#create controller
+nest g controller tasks --no-spec
+
+#create service 
+nest g service tasks --no-spec
+
+#install uuid
+npm install --save uuid
+
+#install class-validator class-transformer
+npm install class-validator class-transformer --save
+
+#install 
+#@nestjs/typeorm -> a bridge, make nestjs to be integrated with typeorm easy
+ #typeorm -> connect to database do all things
+#pg -> driver
+npm install --save @nestjs/typeorm typeorm pg
+
+#uninsall uuid
+npm uninsall uuid
