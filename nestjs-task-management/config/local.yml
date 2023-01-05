@@ -5,7 +5,7 @@ db:
   type: 'postgres'
   port: 5432
   database: 'taskmanagement'
-  host: 'postgres'
+  host: 'localhost'
   username: 'postgres'
   password: 'postgres'
   synchronize: true
@@ -13,3 +13,4 @@ db:
 jwt:
   secret: 'spin'
   expireIn: 3600
+  

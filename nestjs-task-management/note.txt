@@ -51,3 +51,11 @@ npm install config
 #install cross-env for windows to environment varibale
 #in package.json scripts add 'cross-env NODE_ENV=development' before nest command
 npm install cross-env
+
+# docker
+docker build -t nest-cloud-run .
+docker run -p80:3000 nest-cloud-run
+
+#stop all running containers
+docker rm -f $(docker ps -aq)
+

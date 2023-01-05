@@ -1,5 +1,26 @@
 version: '3.8'
 services:
+  taskmanagement:
+      build: .
+      container_name: taskmanagement
+      depends_on:
+          - 'postgres'
+      environment:
+          - PORT=3000
+          - RDS_HOSTNAME=postgres
+          - RDS_PORT=5432
+          - RDS_USERNAME=postgres
+          - RDS_PASSWORD=postgres
+          - RDS_DATABASE=taskmanagement
+          - TYPEORM_SYNC=true
+          - JWT_SECRET=spin
+          - NODE_CONFIG_DIR=/usr/src/app/config
+      ports:
+          - '3000:3000'
+      volumes:
+          - './:/usr/src/app'
+      stdin_open: true
+      tty: true
   postgres:
     image: postgres:latest
     restart: always

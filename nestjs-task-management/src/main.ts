@@ -4,6 +4,7 @@ import { AppModule } from './app.module';
 import * as config from 'config';
 
 async function bootstrap() {
+  console.log(process.env['NODE_CONFIG_DIR']);
   const serverconfig = config.get('server');
   const logger = new Logger('bootstrap');
   const app = await NestFactory.create(AppModule);
