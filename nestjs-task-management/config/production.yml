@@ -1,0 +1,14 @@
+server:
+  port: 3005
+
+db:
+  type: 'postgres'
+  port: 5432
+  database: 'taskmanagement'
+  host: 'localhost'
+  username: 'postgres'
+  password: 'postgres'
+  synchronize: true
+
+jwt:
+  secret: 'spin'

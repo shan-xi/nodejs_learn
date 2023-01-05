@@ -44,3 +44,10 @@ npm install bcrypt --save
 npm install @nestjs/jwt @nestjs/passport passport passport-jwt
 
 #https://jwt.io/
+
+#install config
+npm install config
+
+#install cross-env for windows to environment varibale
+#in package.json scripts add 'cross-env NODE_ENV=development' before nest command
+npm install cross-env
